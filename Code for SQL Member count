@@ -1,0 +1,4 @@
+SELECT ReportsTo, count(ID) as 'Members', round(Avg(Age),0) as 'Average Age' FROM maintable_HQL78
+where ReportsTo is not null
+group by ReportsTo
+order by ReportsTo;
